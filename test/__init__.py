@@ -17,7 +17,7 @@ class TestCSVPrinter(unittest.TestCase):
         self.assertEqual(4, len(line[0]))
 
     # テストケース3
-    def test_read_file(self):
+    def test_file_not_found(self):
         printer = CSVPrinter("dummy.csv")
 
         with self.assertRaises(FileNotFoundError):
