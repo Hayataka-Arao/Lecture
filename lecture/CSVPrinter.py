@@ -7,5 +7,5 @@ class CSVPrinter:
     def read(self):
         with open(self.filename) as f:
             reader = csv.reader(f)
-            lines = list(reader)
+            lines = [row for row in reader]
         return lines
